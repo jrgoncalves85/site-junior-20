@@ -1,11 +1,41 @@
+/* Mostra que o navbar é fixo ao topo */
+body {
+    min-height: 75rem;
+    padding-top: 8rem;
+    font-family: 'Open Sans', sans-serif;
+}
 nav ul li a {
     color: #666!important;
     font-size: 1.2rem;
     text-align: right;
     text-transform: uppercase;
 	text-decoration: none;
-    margin: 0 2rem;
 }
 nav ul li a:hover {
     text-shadow: 1px 1px 5px #CCC;
+}
+.nav-link{
+    padding-left: 5rem!important;
+}
+#perfil {
+    background-color: #1d6f6b;
+    color: #FFF;
+    padding: 2rem 0 1rem;
+}
+h1 {
+    font-family: 'Kaushan Script';
+    font-size: 4.5rem;
+    padding-top: 3rem;
+    letter-spacing: .25rem;
+}
+.float-right {
+    float: right!important;
+}
+.lead{
+    font-size: 1.5rem;
+    font-style: italic;
+    font-family: 'Segoe UI';
+}
+.icons a{
+    display: inline-block;
 }
