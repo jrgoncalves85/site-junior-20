@@ -1,6 +1,8 @@
-/* Mostra que o navbar é fixo ao topo */
+/*
+    Folha de estilo para site pessoal versão bootstrap
+    Desenvolvido por Júnior Gonçalves em  01/03/2022
+*/
 body {
-    min-height: 75rem;
     padding-top: 8rem;
     font-family: 'Open Sans', sans-serif;
 }
@@ -24,9 +26,10 @@ nav ul li a:hover {
 }
 h1 {
     font-family: 'Kaushan Script';
-    font-size: 4.5rem;
     padding-top: 3rem;
-    letter-spacing: .25rem;
+    font-size: 4rem;
+    letter-spacing: 0.25rem;
+    font-weight: 700;
 }
 .float-right {
     float: right!important;
@@ -38,4 +41,18 @@ h1 {
 }
 .icons a{
     display: inline-block;
+}
+#destaques {
+    background-color: #ccd3db;
+}
+.card-text{
+    text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.1rem;
+	color: #333;
+}
+footer{
+    color: #fff;
+    background-color: #333;
+    font-size: 1rem;
 }
