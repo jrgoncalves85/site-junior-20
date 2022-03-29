@@ -56,3 +56,23 @@ footer{
     background-color: #333;
     font-size: 1rem;
 }
+
+@media (max-width: 480px){    
+    .col-12 {
+        width: 110%;
+    }
+    .navbar-nav .nav-link {
+        padding-right: 30px;
+    }
+    .card{
+        margin-left: -1rem;
+        margin-bottom: 2rem;
+    }
+    h1 {
+        padding-top: 0; 
+        font-size: 3rem;
+    }
+    #fotojunior{
+        display: none;
+    }
+}
