@@ -45,6 +45,18 @@ h1 {
 #destaques {
     background-color: #ccd3db;
 }
+#principal {
+    background-color: #1d6f6b;
+    color: #FFF;
+    padding: 2rem 0 1rem;
+}
+.titulo {
+    font-size: 1.7rem;
+    color: #FFF;
+    font-style: italic;
+    padding: 3rem 0 0 3rem!important;
+    font-weight: bold;
+}
 .card-text{
     text-transform: uppercase;
 	font-weight: 700;
