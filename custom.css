@@ -64,7 +64,6 @@ h3{
 	color: #333;
 }
 article {
-    width: 750px;
     float: left;
 }
 article p {
@@ -74,9 +73,9 @@ article p {
     line-height: 1.8rem; 
 }
 aside {
-    width: 250px;
-    float: right;
+    float: left;
     text-align: left;
+    margin-left: 15px;
 }
 details {
     color: #fff;
