@@ -46,41 +46,25 @@
         </nav>        
     </header>
     <main> 
-        <section id="principal">
-            <div class="container">
-                <h3>Deixe aqui seu comentário</h3>	
-                <form class="form-horizontal" action="recados-gravar.php" method="POST">
-                <div class="form-group col-md-6">
-                    <label for="txtnome" class="col-md-2 control-label">Nome:</label>
-                    <div class="col-md-12">
-                        <input type="text" class="form-control" name="txtnome">
-                    </div> 
+        <section id="lista-recados">
+            <div class="container">                
+            <h1>Meus recados</h1>
+            <p><a href="recados-form.html">Clique aqui</a> para deixar o seu recado</p><br>
+            
+            <?php
+                $sql = "SELECT * FROM recados";
+                $conexao = new PDO('mysql:host=127.0.0.1;dbname=site-junior','root','');
+                $resultado = $conexao->query($sql);
+                $lista = $resultado->fetchAll();
+            ?>
+
+            <?php foreach ($lista as $linha): ?>
+                <div class="balao">
+                    <p class="recado"><?php echo $linha['recado'] ?></p>			
+                    <h4 class="nome"><?php echo $linha['nome'] ?></h4>
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="optturma" class="col-md-2 control-label">Turma:</label>
-                    <div class="col-md-6">
-                        <select name="optturma" class="form-control">
-                            <option value="0"> Selecione...</option>
-                            <option value="1C"> 1ºC </option>
-                            <option value="2C"> 2ºC </option>
-                            <option value="3C"> 3ºC </option>
-                        </select> 
-                    </div> 
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="txtrecado" class="col-md-3 control-label">Comentário:</label>
-                    <div class="col-md-12">
-                        <textarea name="txtrecado" class="form-control" cols="30" rows="4"></textarea>
-                    </div> 
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="groupButton"></label>
-                    <div class="col-md-3">
-                        <input type="submit" class="btn btn-warning" value="Enviar comentário">
-                    </div>
-                </div>
-                </form>
-                <h3>Seu comentário estará visível apenas após a aprovação</h3>
+            <?php endforeach ?>
+
             </div>
         </section>        
     </main>
